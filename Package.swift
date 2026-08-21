@@ -12,7 +12,7 @@ let package = Package(
         .visionOS(.v27),
     ],
     products: [
-        // MARK: - The column vocabulary (one importable module; pure typealiases)
+
         .library(name: "Column Primitives", targets: ["Column Primitives"])
     ],
     dependencies: [
@@ -63,7 +63,6 @@ let package = Package(
     ],
     targets: [
 
-        // MARK: - The vocabulary (zero re-exports; consumers import it explicitly)
         .target(
             name: "Column Primitives",
             dependencies: [
@@ -105,7 +104,6 @@ let package = Package(
             ]
         ),
 
-        // MARK: - Tests
         .testTarget(
             name: "Column Primitives Tests",
             dependencies: [

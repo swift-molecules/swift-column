@@ -1,20 +1,3 @@
-// ===----------------------------------------------------------------------===//
-//
-// This source file is part of the swift-primitives open source project
-//
-// Copyright (c) 2024-2026 Coen ten Thije Boonkkamp and the swift-primitives project authors
-// Licensed under Apache License v2.0
-//
-// See LICENSE for license information
-//
-// ===----------------------------------------------------------------------===//
-//
-// The vocabulary smoke: every ruled member SPELLS and CONSTRUCTS its canonical
-// column (an alias-typed binding accepts the canonical constructor), including a
-// ~Copyable element through the suppression-carrying aliases. Member access rides
-// the explicitly-imported column modules (Audit-#9 — the vocabulary re-exports
-// nothing).
-
 import Buffer_Linear_Bounded_Primitive
 import Buffer_Linear_Primitive
 import Buffer_Ring_Bounded_Primitive
