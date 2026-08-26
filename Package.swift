@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-column-primitives",
+    name: "swift-column",
     platforms: [
         .macOS(.v27),
         .iOS(.v27),
@@ -13,127 +13,127 @@ let package = Package(
     ],
     products: [
 
-        .library(name: "Column Primitives", targets: ["Column Primitives"])
+        .library(name: "Column", targets: ["Column"])
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-primitives/swift-buffer-primitives.git",
+            url: "https://github.com/swift-molecules/swift-buffer.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-buffer-linear-primitives.git",
+            url: "https://github.com/swift-molecules/swift-buffer-linear.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-buffer-ring-primitives.git",
+            url: "https://github.com/swift-molecules/swift-buffer-ring.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-storage-primitives.git",
+            url: "https://github.com/swift-molecules/swift-storage.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-storage-generational-primitives.git",
+            url: "https://github.com/swift-molecules/swift-storage-generational.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-ownership-shared-primitives.git",
+            url: "https://github.com/swift-molecules/swift-ownership-shared.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-memory-primitives.git",
+            url: "https://github.com/swift-molecules/swift-memory.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-memory-heap-primitives.git",
+            url: "https://github.com/swift-molecules/swift-memory-heap.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-memory-allocation-primitives.git",
+            url: "https://github.com/swift-molecules/swift-memory-allocation.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-index-primitives.git",
+            url: "https://github.com/swift-molecules/swift-index.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-tagged-primitives.git",
+            url: "https://github.com/swift-molecules/swift-tagged.git",
             branch: "main"
         ),
     ],
     targets: [
 
         .target(
-            name: "Column Primitives",
+            name: "Column",
             dependencies: [
-                .product(name: "Buffer Primitive", package: "swift-buffer-primitives"),
+                .product(name: "Buffer Primitive", package: "swift-buffer"),
                 .product(
                     name: "Buffer Linear Primitive",
-                    package: "swift-buffer-linear-primitives"
+                    package: "swift-buffer-linear"
                 ),
                 .product(
                     name: "Buffer Linear Bounded Primitive",
-                    package: "swift-buffer-linear-primitives"
+                    package: "swift-buffer-linear"
                 ),
-                .product(name: "Buffer Ring Primitive", package: "swift-buffer-ring-primitives"),
-                .product(name: "Storage Primitive", package: "swift-storage-primitives"),
+                .product(name: "Buffer Ring Primitive", package: "swift-buffer-ring"),
+                .product(name: "Storage Primitive", package: "swift-storage"),
                 .product(
-                    name: "Storage Contiguous Primitives",
-                    package: "swift-storage-primitives"
+                    name: "Storage Contiguous",
+                    package: "swift-storage"
                 ),
-                .product(name: "Store Protocol Primitives", package: "swift-storage-primitives"),
-                .product(name: "Store Inline Primitives", package: "swift-storage-primitives"),
+                .product(name: "Store Protocol", package: "swift-storage"),
+                .product(name: "Store Inline", package: "swift-storage"),
                 .product(
-                    name: "Storage Generational Primitives",
-                    package: "swift-storage-generational-primitives"
+                    name: "Storage Generational",
+                    package: "swift-storage-generational"
                 ),
                 .product(
                     name: "Ownership Shared Primitive",
-                    package: "swift-ownership-shared-primitives"
+                    package: "swift-ownership-shared"
                 ),
-                .product(name: "Memory Primitive", package: "swift-memory-primitives"),
-                .product(name: "Memory Heap Primitives", package: "swift-memory-heap-primitives"),
+                .product(name: "Memory Primitive", package: "swift-memory"),
+                .product(name: "Memory Heap", package: "swift-memory-heap"),
                 .product(
                     name: "Memory Allocator Primitive",
-                    package: "swift-memory-allocation-primitives"
+                    package: "swift-memory-allocation"
                 ),
                 .product(
-                    name: "Memory Allocator Pool Primitives",
-                    package: "swift-memory-allocation-primitives"
+                    name: "Memory Allocator Pool",
+                    package: "swift-memory-allocation"
                 ),
             ]
         ),
 
         .testTarget(
-            name: "Column Primitives Tests",
+            name: "Column Tests",
             dependencies: [
-                "Column Primitives",
+                "Column",
                 .product(
                     name: "Buffer Linear Primitive",
-                    package: "swift-buffer-linear-primitives"
+                    package: "swift-buffer-linear"
                 ),
                 .product(
                     name: "Buffer Linear Bounded Primitive",
-                    package: "swift-buffer-linear-primitives"
+                    package: "swift-buffer-linear"
                 ),
-                .product(name: "Buffer Ring Primitive", package: "swift-buffer-ring-primitives"),
+                .product(name: "Buffer Ring Primitive", package: "swift-buffer-ring"),
                 .product(
                     name: "Buffer Ring Bounded Primitive",
-                    package: "swift-buffer-ring-primitives"
+                    package: "swift-buffer-ring"
                 ),
-                .product(name: "Store Inline Primitives", package: "swift-storage-primitives"),
+                .product(name: "Store Inline", package: "swift-storage"),
                 .product(
-                    name: "Storage Generational Primitives",
-                    package: "swift-storage-generational-primitives"
+                    name: "Storage Generational",
+                    package: "swift-storage-generational"
                 ),
                 .product(
                     name: "Ownership Shared Primitive",
-                    package: "swift-ownership-shared-primitives"
+                    package: "swift-ownership-shared"
                 ),
-                .product(name: "Index Primitives", package: "swift-index-primitives"),
+                .product(name: "Index", package: "swift-index"),
                 .product(
-                    name: "Tagged Primitives Standard Library Integration",
-                    package: "swift-tagged-primitives"
+                    name: "Tagged Standard Library Integration",
+                    package: "swift-tagged"
                 ),
             ]
         ),

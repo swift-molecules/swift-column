@@ -1,4 +1,4 @@
-public import Store_Protocol_Primitives
+public import Store_Protocol
 
 extension Column {
 

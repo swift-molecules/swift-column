@@ -2,15 +2,15 @@ public import Buffer_Linear_Bounded_Primitive
 public import Buffer_Linear_Primitive
 public import Buffer_Primitive
 public import Buffer_Ring_Primitive
-public import Memory_Allocator_Pool_Primitives
+public import Memory_Allocator_Pool
 public import Memory_Allocator_Primitive
-public import Memory_Heap_Primitives
+public import Memory_Heap
 public import Memory_Primitive
 public import Ownership_Shared_Primitive
-public import Storage_Contiguous_Primitives
-public import Storage_Generational_Primitives
+public import Storage_Contiguous
+public import Storage_Generational
 public import Storage_Primitive
-public import Store_Inline_Primitives
+public import Store_Inline
 
 public enum Column {}
 

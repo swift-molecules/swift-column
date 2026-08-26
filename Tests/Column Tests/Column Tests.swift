@@ -2,12 +2,12 @@ import Buffer_Linear_Bounded_Primitive
 import Buffer_Linear_Primitive
 import Buffer_Ring_Bounded_Primitive
 import Buffer_Ring_Primitive
-import Column_Primitives
-import Index_Primitives
+import Column
+import Index
 import Ownership_Shared_Primitive
-import Storage_Generational_Primitives
-import Store_Inline_Primitives
-import Tagged_Primitives_Standard_Library_Integration
+import Storage_Generational
+import Store_Inline
+import Tagged_Standard_Library_Integration
 import Testing
 
 private struct MoveOnly: ~Copyable { var v: Int }
