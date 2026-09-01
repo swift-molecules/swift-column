@@ -45,7 +45,7 @@ let package = Package(
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-molecules/swift-memory-heap.git",
+            url: "https://github.com/swift-atoms/swift-memory.git",
             branch: "main"
         ),
         .package(
@@ -92,7 +92,7 @@ let package = Package(
                     package: "swift-ownership-shared"
                 ),
                 .product(name: "Memory Primitive", package: "swift-memory"),
-                .product(name: "Memory Heap", package: "swift-memory-heap"),
+                .product(name: "Memory", package: "swift-memory"),
                 .product(
                     name: "Memory Allocator Primitive",
                     package: "swift-memory-allocation"

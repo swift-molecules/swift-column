@@ -4,7 +4,7 @@ public import Buffer_Primitive
 public import Buffer_Ring_Primitive
 public import Memory_Allocator_Pool
 public import Memory_Allocator_Primitive
-public import Memory_Heap
+public import Memory
 public import Memory_Primitive
 public import Ownership_Shared_Primitive
 public import Storage_Contiguous
