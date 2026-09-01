@@ -62,7 +62,7 @@ let package = Package(
         .target(
             name: "Column",
             dependencies: [
-                .product(name: "Buffer Primitive", package: "swift-buffer"),
+                .product(name: "Buffer", package: "swift-buffer"),
                 .product(
                     name: "Buffer Linear Primitive",
                     package: "swift-buffer-linear"
@@ -72,7 +72,7 @@ let package = Package(
                     package: "swift-buffer-linear"
                 ),
                 .product(name: "Buffer Ring Primitive", package: "swift-buffer-ring"),
-                .product(name: "Storage Primitive", package: "swift-storage"),
+                .product(name: "Storage", package: "swift-storage"),
                 .product(
                     name: "Storage Contiguous",
                     package: "swift-storage"

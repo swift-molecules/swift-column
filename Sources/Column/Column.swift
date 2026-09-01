@@ -1,6 +1,6 @@
 public import Buffer_Linear_Bounded_Primitive
 public import Buffer_Linear_Primitive
-public import Buffer_Primitive
+public import Buffer
 public import Buffer_Ring_Primitive
 public import Memory_Pool
 public import Memory_Allocator
@@ -9,7 +9,7 @@ public import Memory
 public import Ownership_Shared_Primitive
 public import Storage
 public import Storage_Generational
-public import Storage_Primitive
+public import Storage
 public import Store_Inline
 
 public enum Column {}
