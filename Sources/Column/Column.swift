@@ -2,8 +2,8 @@ public import Buffer_Linear_Bounded_Primitive
 public import Buffer_Linear_Primitive
 public import Buffer_Primitive
 public import Buffer_Ring_Primitive
-public import Memory_Allocator_Pool
-public import Memory_Allocator_Primitive
+public import Memory_Pool
+public import Memory_Allocator
 public import Memory
 public import Memory
 public import Ownership_Shared_Primitive

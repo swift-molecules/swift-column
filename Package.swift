@@ -89,11 +89,11 @@ let package = Package(
                 ),
                 .product(name: "Memory", package: "swift-memory"),
                 .product(
-                    name: "Memory Allocator Primitive",
+                    name: "Memory Allocator",
                     package: "swift-memory-allocation"
                 ),
                 .product(
-                    name: "Memory Allocator Pool",
+                    name: "Memory Pool",
                     package: "swift-memory-allocation"
                 ),
             ]
