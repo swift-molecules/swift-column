@@ -41,10 +41,6 @@ let package = Package(
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-molecules/swift-memory.git",
-            branch: "main"
-        ),
-        .package(
             url: "https://github.com/swift-atoms/swift-memory.git",
             branch: "main"
         ),
@@ -91,7 +87,6 @@ let package = Package(
                     name: "Ownership Shared Primitive",
                     package: "swift-ownership-shared"
                 ),
-                .product(name: "Memory Primitive", package: "swift-memory"),
                 .product(name: "Memory", package: "swift-memory"),
                 .product(
                     name: "Memory Allocator Primitive",
